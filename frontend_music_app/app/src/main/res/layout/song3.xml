@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp">
+        <ImageView
+            android:id="@+id/imageViewBackgroundTheSong3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/cuctinhy1"
+            android:scaleType="fitXY"
+            />
+        <LinearLayout
+            android:id="@+id/linearLayoutSongs"
+            android:layout_width="295dp"
+            android:layout_height="60dp"
+            android:layout_toEndOf="@id/imageViewBackgroundTheSong3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/textViewNameSongAdding3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Em này"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/textViewSingerAdding3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gin Tuấn Kiệt, Puka"
+                android:textSize="17dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imageViewAddingSong3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_favorite_border_24"
+            android:layout_toEndOf="@id/linearLayoutSongs"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</RelativeLayout>

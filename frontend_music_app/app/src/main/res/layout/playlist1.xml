@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageViewItemPersonal"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/addbox"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/textViewItemPersonal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tạo playlist"
+        android:layout_toEndOf="@id/imageViewItemPersonal"
+        android:textSize="18dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="25dp"
+        android:textStyle="italic"/>
+</RelativeLayout>

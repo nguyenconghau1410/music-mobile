@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PlaylistFragment"
+    android:gravity="center">
+
+    <TextView
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/textViewPlaylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TOP THỊNH HÀNH"/>
+
+    <ListView
+        android:id="@+id/listViewPlaylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPlaylist" />
+
+<!--    <TextView-->
+<!--        android:text="View more"-->
+<!--        android:textSize="19sp"-->
+<!--        android:drawablePadding="10dp"-->
+<!--        android:drawableLeft="@drawable/ic_stat_name"-->
+<!--        android:padding="5dp"-->
+<!--        android:layout_below="@id/listViewPlaylist"-->
+<!--        android:id="@+id/textViewPlaylistMore"-->
+<!--        android:background="#c9c7c7"-->
+<!--        android:paddingTop="8dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:paddingBottom="10dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="#0a0a0a"/>-->
+
+
+</RelativeLayout>

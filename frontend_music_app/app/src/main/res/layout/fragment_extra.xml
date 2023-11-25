@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ExtraFragment">
+
+    <TextView
+        android:id="@+id/textViewExtra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Có thể bạn thích"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="10dp"/>
+
+    <ListView
+        android:id="@+id/listViewExtra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#FAF8F8"
+        android:dividerHeight="0dp"
+        android:layout_below="@id/textViewExtra"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

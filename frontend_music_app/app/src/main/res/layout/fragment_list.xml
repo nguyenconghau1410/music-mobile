@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ListFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewListFragment"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/pink_purple"
+            android:alpha="0.9"
+            android:outlineSpotShadowColor="@color/black"
+            android:outlineAmbientShadowColor="@color/black">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="6">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:text="Bài hát"
+                        android:textSize="17dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:id="@+id/textViewListFragmentSong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Không cần phải hứa đâu em"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:text="Album"
+                        android:textSize="17dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:id="@+id/textViewListFragmentAlbum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Không cần phải hứa đâu em"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="29dp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:text="Nghệ sĩ"
+                        android:textSize="17dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:id="@+id/textViewListFragmentSinger"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phạm Khánh Hưng"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="21dp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:text="Thể loại"
+                        android:textSize="17dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:id="@+id/textViewListFragmentCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Việt Nam, V-POP"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="50dp"
+            android:id="@+id/recycleViewListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</ScrollView>

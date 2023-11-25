@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <TextView
+        android:id="@+id/textViewSTTTop50"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="1"
+        android:textSize="17dp"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSongs"
+        android:layout_width="295dp"
+        android:layout_height="60dp"
+        android:layout_toEndOf="@id/textViewSTTTop50"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewNameSongTop50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Em này"
+            android:textSize="19dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewSingerTop50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gin Tuấn Kiệt, Puka"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="17dp" />
+    </LinearLayout>
+</RelativeLayout>

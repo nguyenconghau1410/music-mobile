@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomepageFragment"
+    android:scrollbars="none"
+    android:fillViewport="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <fragment
+            android:name="com.example.music_app.fragments.BannerFragment"
+            android:id="@+id/fragment_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </fragment>
+        <fragment
+            android:name="com.example.music_app.fragments.PlaylistFragment"
+            android:id="@+id/fragment_playlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </fragment>
+        <fragment
+            android:name="com.example.music_app.fragments.TopicFragment"
+            android:id="@+id/fragment_topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </fragment>
+        <fragment
+            android:name="com.example.music_app.fragments.AlbumFragment"
+            android:id="@+id/fragment_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </fragment>
+        <fragment
+            android:name="com.example.music_app.fragments.ExtraFragment"
+            android:id="@+id/fragment_extra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </fragment>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252A45"
+    android:orientation="vertical"
+    tools:context=".AddingSong">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#48507E">
+        <LinearLayout
+            android:id="@+id/ln1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/imageButtonAddingSongClose"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/baseline_close_24"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thêm bài hát"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_toRightOf="@id/imageButtonAddingSongClose"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@id/ln1"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_searchview_bg"
+            android:drawableLeft="@drawable/baseline_youtube_searched_for_24"
+            android:drawablePadding="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:hint="Tìm kiếm bài hát"
+            android:layout_marginBottom="16dp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listViewSongAdding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="16dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"/>
+
+
+</LinearLayout>

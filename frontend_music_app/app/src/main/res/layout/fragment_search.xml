@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddingSong">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink_purple">
+        <EditText
+            android:id="@+id/editTextSearch1"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_searchview_bg"
+            android:drawableLeft="@drawable/baseline_youtube_searched_for_24"
+            android:drawablePadding="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:hint="Tìm kiếm bài hát"
+            android:layout_marginBottom="16dp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listViewSearchFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="16dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"/>
+
+
+</LinearLayout>

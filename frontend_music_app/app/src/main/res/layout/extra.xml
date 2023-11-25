@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewExtra"
+        android:layout_width="95dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/luusonhien1"
+        android:layout_marginTop="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutExtra"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageViewExtra"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/textViewExtraTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anh nhớ em người yêu cũ"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/textViewExtraName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minh Vương M4U"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/textViewExtraTitle"
+            android:textSize="18dp"
+            android:textColor="#9F9191"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageViewFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_stat_name"
+        android:layout_toRightOf="@id/relativeLayoutExtra"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="8dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".fragments.PersonalFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linearLayoutPersonal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <fragment
+            android:name="com.example.music_app.fragments.PersonalInforFragment"
+            android:id="@+id/fragment_personalInfor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </fragment>
+        <fragment
+            android:name="com.example.music_app.fragments.PlayListPersonalFragment"
+            android:id="@+id/fragment_playlistPersonal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </fragment>
+<!--        <fragment-->
+<!--            android:name="com.example.music_app.fragments.RecommendFragment"-->
+<!--            android:id="@+id/fragment_Recommend"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--        </fragment>-->
+
+
+    </LinearLayout>
+</ScrollView>
